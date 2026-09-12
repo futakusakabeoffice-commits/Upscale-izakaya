@@ -164,7 +164,9 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   top: 61px;
   z-index: 39;
-  background: var(--bg-light);
+  background: rgba(245, 228, 216, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   overflow-y: auto;
 }
 .mobile-nav nav {
