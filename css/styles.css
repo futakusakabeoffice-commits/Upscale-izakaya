@@ -451,16 +451,18 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-light);
   letter-spacing: .12em;
 }
-.reserve-bar__right { display: flex; align-items: center; gap: 20px; margin-left: auto; }
+.reserve-bar__right { display: flex; align-items: center; gap: 20px; margin-left: auto; width: 100%; }
 .reserve-bar__calendar,
 .reserve-bar__tel { display: none; }
-.btn--reserve { padding: 11px 24px; background: var(--primary); font-size: 13px; }
+.btn--reserve { flex: 1; justify-content: center; padding: 11px 24px; background: var(--primary); font-size: 13px; }
 .btn--reserve:hover { background: var(--primary-dark); }
 
 @media (min-width: 1024px) {
   .reserve-bar { padding: 0 32px; }
   .reserve-bar__label { display: block; }
+  .reserve-bar__right { width: auto; }
   .reserve-bar__calendar,
   .reserve-bar__tel { display: block; font: 300 14px var(--font-body); color: var(--text-light); letter-spacing: .08em; }
   .reserve-bar__tel { font: 400 17px var(--font-latin); letter-spacing: .06em; }
+  .btn--reserve { flex: none; }
 }
