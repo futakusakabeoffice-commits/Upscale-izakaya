@@ -3,10 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>燈のこだわり | 炭火焼鳥 燈（あかり）</title>
-<meta name="description" content="備長炭、契約農家の銘柄鶏、三年ねかせた自家製ダレ——炭火焼鳥「燈」が一串ごとに惜しまない、火と手間へのこだわりをご紹介します。">
-<meta property="og:title" content="燈のこだわり | 炭火焼鳥 燈（あかり）">
-<meta property="og:description" content="備長炭、契約農家の銘柄鶏、三年ねかせた自家製ダレ——燈が一串ごとに惜しまない、火と手間へのこだわり。">
+<title>こだわり - 炭火焼鳥 燈（あかり）</title>
+<meta name="description" content="備長炭による炭火焼きへのこだわり、契約農家の銘柄地鶏、三年ものの自家製タレ。炭火焼鳥 燈のものづくりをご紹介します。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -18,7 +16,7 @@
   <div class="site-header__inner">
     <a href="index.html" class="brand">
       <span class="brand__mark">燈</span>
-      <span class="brand__name">SUMIBI YAKITORI AKARI</span>
+      <span class="brand__name brand__name--latin">SUMIBI YAKITORI AKARI</span>
     </a>
 
     <button type="button" class="hamburger" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="メニューを開く">
@@ -27,7 +25,7 @@
 
     <nav class="main-nav" aria-label="グローバルナビゲーション">
       <a href="index.html">HOME</a>
-      <a href="こだわり.html" aria-current="page">こだわり</a>
+      <a href="こだわり.html" class="is-active" aria-current="page">こだわり</a>
       <a href="メニュー.html">メニュー</a>
       <a href="店舗情報.html">店舗情報</a>
       <a href="お知らせ.html">お知らせ</a>
@@ -39,7 +37,7 @@
 <div class="mobile-nav" id="mobileNav" hidden>
   <nav aria-label="モバイルナビゲーション">
     <a href="index.html">HOME</a>
-    <a href="こだわり.html" aria-current="page">こだわり</a>
+    <a href="こだわり.html" class="is-active" aria-current="page">こだわり</a>
     <a href="メニュー.html">メニュー</a>
     <a href="店舗情報.html">店舗情報</a>
     <a href="お知らせ.html">お知らせ</a>
@@ -49,65 +47,128 @@
 
 <main>
 
-  <!-- SUB HERO -->
-  <section class="hero hero--sub">
-    <img class="hero__image" src="images/belief-craftsman.jpg" alt="炭火と向き合う職人">
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__kicker">OUR COMMITMENT</p>
-      <h1 class="hero__title">燈のこだわり</h1>
+  <section class="page-hero">
+    <img class="page-hero__image" src="images/kodawari-hero.jpg" alt="備長炭の熾火のクローズアップ">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__title">Commitment</p>
+      <p class="page-hero__subtitle">こだわり</p>
     </div>
   </section>
 
-  <!-- BREADCRUMB -->
   <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="index.html">ホーム</a><span aria-hidden="true"> ── </span><span aria-current="page">こだわり</span>
+    <a href="index.html">ホーム</a> ── <span class="breadcrumb__current">こだわり</span>
   </nav>
 
-  <!-- SUB PAGE BODY -->
-  <section class="sub-page">
-    <div class="sub-page__inner">
-      <p class="label label--accent">OUR COMMITMENT</p>
-      <h2 class="heading-jp heading-jp--light">一串に、火と手間を惜しまない。</h2>
-      <p class="sub-page__lead">火加減がすべてを左右する炭火焼きだからこそ、私たちは効率よりも、一本の串に向き合う時間を大切にしています。派手な演出はいりません。良い炭、良い素材、そして丁寧に積み重ねた時間——そのすべてが、皿の上の一本に静かに宿っています。</p>
+  <section class="intro-statement">
+    <p class="intro-statement__label">OUR BELIEF</p>
+    <h1 class="intro-statement__title">一串に、火と手間を。</h1>
+    <p class="intro-statement__lead">燈は、「一串に、火と手間を惜しまない」を信条に、備長炭による炭火焼きにこだわる焼鳥専門店です。火加減がすべてを左右する炭火焼きだからこそ、串一本一本に目を配り、脂の乗り、香ばしさ、じゅわりと広がる肉汁まで、最良の一瞬を見極めてお出ししています。</p>
+  </section>
 
-      <div class="story-photo">
-        <img src="images/hero-yakitori.jpg" alt="炭火で焼く焼き鳥">
-        <div class="story-photo__badge"><span>炭を、熾す。</span></div>
-      </div>
-
-      <div class="sub-page__section">
-        <span class="sub-page__no">01</span>
-        <div>
-          <h3 class="sub-page__title">備長炭という選択</h3>
-          <p class="sub-page__text">火力が強く、遠赤外線でじっくりと中まで火を通す備長炭は、扱いに手間がかかる炭です。それでも燈が備長炭を選び続けるのは、皮目はパリッと、中はふっくらと仕上がる、あの香ばしさに理由があるから。炭を熾すところから串を返すタイミングまで、すべてを職人の目と経験にゆだねています。</p>
-          <div class="sub-page__photo"><img src="images/menu-moriawase.jpg" alt="備長炭で焼く焼鳥の炎"></div>
+  <section class="commitment">
+    <div class="commitment-row">
+      <div class="commitment-row__image"><img src="images/kodawari-fire.jpg" alt="炭火で焼かれる串と炎"></div>
+      <div>
+        <div class="commitment-row__meta">
+          <span class="commitment-row__no">01</span>
+          <span class="commitment-row__tag">備長炭</span>
         </div>
-      </div>
-
-      <div class="sub-page__section">
-        <span class="sub-page__no">02</span>
-        <div>
-          <h3 class="sub-page__title">契約農家の銘柄鶏</h3>
-          <p class="sub-page__text">鶏の質は、焼鳥の味をそのまま決めてしまいます。だからこそ燈では、信頼できる契約農家から届く銘柄鶏のみを使用しています。届いたその日のうちに一本一本丁寧に串を打ち、余計な下処理は加えません。素材そのものの旨みを、炭火でまっすぐに引き出すことだけを考えています。</p>
-          <div class="sub-page__photo"><img src="images/menu-momo-shio.jpg" alt="銘柄鶏のもも塩"></div>
-        </div>
-      </div>
-
-      <div class="sub-page__section">
-        <span class="sub-page__no">03</span>
-        <div>
-          <h3 class="sub-page__title">三年ねかせた自家製ダレ</h3>
-          <p class="sub-page__text">開業の日から継ぎ足しながら育ててきた自家製のタレは、三年の歳月を経て、今の深みにたどり着きました。甘みと香ばしさ、そして炭火の香りが重なり合う味わいは、一朝一夕には作れません。これからも守り、育て続けていくのが、燈の変わらぬ仕事です。</p>
-          <div class="sub-page__photo"><img src="images/menu-tebasaki.jpg" alt="自家製ダレを絡めた手羽先"></div>
-        </div>
-      </div>
-
-      <div class="sub-page__cta">
-        <p>炭火の香りと、じっくり育てた味わいを、ぜひ店内でお確かめください。</p>
-        <a href="ご予約.html" class="btn btn--pill">ご予約はこちら</a>
+        <h2 class="commitment-row__title">火を、読む。</h2>
+        <p class="commitment-row__text">遠赤外線の強い備長炭は、表面を一気に焼き固めながら中はしっとりと仕上げます。熾火の色と音、立ちのぼる香りを読み、うちわの一振りで火力を整える。数字では測れない判断の積み重ねが、一本の完成度を決めます。</p>
+        <p class="commitment-row__text">カウンター越しに、その音と香りまでを味わっていただきたい。焼き場を客席の正面に据えているのは、そのためです。</p>
       </div>
     </div>
+
+    <div class="commitment-row commitment-row--reverse">
+      <div class="commitment-row__image"><img src="images/kodawari-hands.jpg" alt="串を打つ職人の手元"></div>
+      <div>
+        <div class="commitment-row__meta">
+          <span class="commitment-row__no">02</span>
+          <span class="commitment-row__tag">銘柄地鶏</span>
+        </div>
+        <h2 class="commitment-row__title">素材を、選ぶ。</h2>
+        <p class="commitment-row__text">鶏は、信頼できる契約農家の銘柄鶏のみを使用しています。届いたその日に一羽ずつ手で捌き、部位ごとに串の打ち方と大きさを変える。余計な手は加えず、素材の輪郭をそのまま皿へ運びます。</p>
+        <p class="commitment-row__text">季節の一品料理にも、同じ目で選んだ旬の食材を。派手さよりも、確かさを。</p>
+      </div>
+    </div>
+
+    <div class="commitment-row">
+      <div class="commitment-row__image"><img src="images/kodawari-tare.jpg" alt="タレ壺と串"></div>
+      <div>
+        <div class="commitment-row__meta">
+          <span class="commitment-row__no">03</span>
+          <span class="commitment-row__tag">三年もののタレ</span>
+        </div>
+        <h2 class="commitment-row__title">時を、重ねる。</h2>
+        <p class="commitment-row__text">開業以来、継ぎ足しながら三年かけて育てた自家製のタレ。鶏の脂と焼きの香りが日々溶け込み、少しずつ深みを増していきます。仕込みは毎朝、火入れは一日二度。絶やさないことが、味を守ること。</p>
+        <p class="commitment-row__text">タレ・塩はお好みでお選びいただけます。日本酒・焼酎の各種お取り揃えもございます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="owner">
+    <div class="owner-ribbon"><span>隠れ家の一献を</span></div>
+    <div class="owner__inner">
+      <div class="owner__content">
+        <p class="owner__label">FROM THE OWNER</p>
+        <h2 class="owner__title">静かな夜に、<br>ちょうどいい一本を。</h2>
+        <p class="owner__text">カウンター越しに炭火の熾る音と香りを感じながら、ゆったりとお過ごしいただける空間をつくりました。おひとりでのご来店から、大切な方との会食、少人数の貸切まで、隠れ家のような一夜をお約束します。</p>
+        <p class="owner__text owner__text--soft">今日の焼き加減がいちばん良い一本を、そっとお出しできたら。それが私たちの仕事です。</p>
+        <ul class="tag-list">
+          <li>備長炭</li>
+          <li>銘柄地鶏</li>
+          <li>三年もののタレ</li>
+          <li>隠れ家の一献</li>
+        </ul>
+      </div>
+      <div class="owner__image"><img src="images/owner-portrait.jpg" alt="店主のポートレート（縦位置）"></div>
+    </div>
+  </section>
+
+  <section class="teaser">
+    <div class="teaser__inner">
+      <div>
+        <p class="teaser__label">名物の炭火焼鳥</p>
+        <p class="teaser__title">Menu</p>
+        <p class="teaser__lead">このこだわりが、どんな一本になるのか。品書きをご覧ください。</p>
+        <a href="メニュー.html" class="link-arrow link-arrow--light">
+          <span>View Menu</span>
+          <span class="link-arrow__circle">→</span>
+        </a>
+      </div>
+      <div>
+        <div class="list-row">
+          <span class="list-row__no">01</span>
+          <span class="list-row__title">特選もも塩</span>
+          <span class="list-row__price">¥280</span>
+        </div>
+        <div class="list-row">
+          <span class="list-row__no">02</span>
+          <span class="list-row__title">名物つくね（黄身添え）</span>
+          <span class="list-row__price">¥320</span>
+        </div>
+        <div class="list-row">
+          <span class="list-row__no">03</span>
+          <span class="list-row__title">手羽先の炭火焼き</span>
+          <span class="list-row__price">¥580</span>
+        </div>
+        <div class="list-row list-row--last">
+          <span class="list-row__no">04</span>
+          <span class="list-row__title">燈の焼鳥盛り合わせ（5本）</span>
+          <span class="list-row__price">¥1,580</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="label label--accent">CONTACT</p>
+    <h2 class="heading-jp heading-jp--light">ご予約・お問い合わせ</h2>
+    <p class="contact__lead">カウンター席・個室のご予約、貸切・宴会のご相談はお電話にて承ります。</p>
+    <a href="tel:00-0000-0000" class="btn btn--pill btn--contact">
+      お電話でのご予約はこちら<span>00-0000-0000</span>
+    </a>
   </section>
 
 </main>

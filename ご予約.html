@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ご予約・お問い合わせ - 炭火焼鳥 燈（あかり）</title>
+<meta name="description" content="炭火焼鳥 燈へのご予約・お問い合わせ。お電話、またはフォームから2日後以降のご予約を承ります。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">燈</span>
+      <span class="brand__name brand__name--latin">SUMIBI YAKITORI AKARI</span>
+    </a>
+
+    <button type="button" class="hamburger" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">HOME</a>
+      <a href="こだわり.html">こだわり</a>
+      <a href="メニュー.html">メニュー</a>
+      <a href="店舗情報.html">店舗情報</a>
+      <a href="お知らせ.html">お知らせ</a>
+      <a href="ご予約.html" class="btn btn--pill" aria-current="page">ご予約</a>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" hidden>
+  <nav aria-label="モバイルナビゲーション">
+    <a href="index.html">HOME</a>
+    <a href="こだわり.html">こだわり</a>
+    <a href="メニュー.html">メニュー</a>
+    <a href="店舗情報.html">店舗情報</a>
+    <a href="お知らせ.html">お知らせ</a>
+    <a href="ご予約.html" class="btn btn--pill" aria-current="page">ご予約</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="page-hero">
+    <img class="page-hero__image" src="images/reservation-hero.jpg" alt="灯りのともる店内">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__title">Reservation</p>
+      <p class="page-hero__subtitle">ご予約・お問い合わせ</p>
+    </div>
+  </section>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="index.html">ホーム</a> ── <span class="breadcrumb__current">ご予約・お問い合わせ</span>
+  </nav>
+
+  <section class="phone-cta">
+    <div>
+      <p class="phone-cta__label">お電話でのご予約</p>
+      <h2 class="phone-cta__title">当日のご予約・貸切のご相談は、<br>お電話が確実です。</h2>
+      <p class="phone-cta__hours">受付時間 17:00〜23:00（日曜定休）</p>
+    </div>
+    <a href="tel:00-0000-0000" class="btn btn--pill">
+      お電話はこちら<span>00-0000-0000</span>
+    </a>
+  </section>
+
+  <section class="reserve-form-section">
+    <div class="reserve-form-section__inner">
+      <div>
+        <p class="reserve-form-section__intro-label">FORM</p>
+        <h2 class="reserve-form-section__intro-title">フォームから<br>ご予約</h2>
+        <p class="reserve-form-section__intro-text">2日後以降のご予約を承ります。内容を確認のうえ、店舗より折り返しご連絡いたします。</p>
+        <p class="reserve-form-section__intro-note">※ 当日・翌日のご予約、7名様以上の貸切はお電話にてご相談ください。</p>
+      </div>
+
+      <div>
+        <div class="thanks-panel" id="thanksPanel" hidden>
+          <p class="thanks-panel__eyebrow">Thank you</p>
+          <h3 class="thanks-panel__title">ご予約リクエストを承りました</h3>
+          <p class="thanks-panel__text">店舗より折り返しご連絡いたします。<br>お急ぎの場合は 00-0000-0000 までお電話ください。</p>
+          <button type="button" class="btn--outline" id="resetFormBtn">別の予約を入力する</button>
+        </div>
+
+        <form class="reserve-form" id="reserveForm" novalidate>
+          <label class="reserve-form__field" id="fieldName">
+            <span class="field-label">お名前 <span class="required">必須</span></span>
+            <input type="text" id="inputName" name="name" placeholder="燈 太郎" autocomplete="name">
+            <span class="reserve-form__error" id="errorName"></span>
+          </label>
+
+          <label class="reserve-form__field" id="fieldTel">
+            <span class="field-label">電話番号 <span class="required">必須</span></span>
+            <input type="tel" id="inputTel" name="tel" placeholder="09000000000" autocomplete="tel">
+            <span class="reserve-form__error" id="errorTel"></span>
+          </label>
+
+          <label class="reserve-form__field" id="fieldDate">
+            <span class="field-label">ご希望日 <span class="required">必須</span></span>
+            <input type="date" id="inputDate" name="date">
+            <span class="reserve-form__error" id="errorDate"></span>
+          </label>
+
+          <label class="reserve-form__field">
+            <span class="field-label">ご来店時間</span>
+            <select id="inputTime" name="time">
+              <option value="17:00">17:00</option>
+              <option value="18:00" selected>18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+              <option value="22:00">22:00</option>
+            </select>
+          </label>
+
+          <div class="reserve-form__group">
+            <span class="field-label">人数</span>
+            <div class="chip-group" id="partyChips" role="group" aria-label="人数を選択">
+              <button type="button" class="chip-btn" data-value="1名" aria-pressed="false">1名</button>
+              <button type="button" class="chip-btn" data-value="2名" aria-pressed="true">2名</button>
+              <button type="button" class="chip-btn" data-value="3名" aria-pressed="false">3名</button>
+              <button type="button" class="chip-btn" data-value="4名" aria-pressed="false">4名</button>
+              <button type="button" class="chip-btn" data-value="5〜6名" aria-pressed="false">5〜6名</button>
+              <button type="button" class="chip-btn" data-value="7名以上" aria-pressed="false">7名以上</button>
+            </div>
+          </div>
+
+          <div class="reserve-form__group">
+            <span class="field-label">ご希望のお席</span>
+            <div class="chip-group" id="seatChips" role="group" aria-label="お席を選択">
+              <button type="button" class="chip-btn" data-value="カウンター" aria-pressed="true">カウンター</button>
+              <button type="button" class="chip-btn" data-value="テーブル" aria-pressed="false">テーブル</button>
+              <button type="button" class="chip-btn" data-value="個室" aria-pressed="false">個室</button>
+              <button type="button" class="chip-btn" data-value="おまかせ" aria-pressed="false">おまかせ</button>
+            </div>
+          </div>
+
+          <label class="reserve-form__field reserve-form__full">
+            <span class="field-label">ご要望</span>
+            <textarea id="inputNote" name="note" rows="4" placeholder="アレルギー、記念日のご利用など"></textarea>
+          </label>
+
+          <div class="reserve-form__footer">
+            <span class="reserve-form__summary" id="formSummary">日付未定 18:00 ／ 2名 ／ カウンター</span>
+            <button type="submit" class="btn--submit">予約リクエストを送る</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes">
+    <div class="section-heading">
+      <p class="label label--accent">NOTES</p>
+      <h2 class="heading-jp heading-jp--light">ご予約にあたって</h2>
+    </div>
+    <div class="notes-grid">
+      <div class="note-card">
+        <p class="note-card__no">01</p>
+        <h3 class="note-card__title">キャンセルについて</h3>
+        <p class="note-card__desc">前日までにご連絡ください。当日キャンセルはお電話にてお願いいたします。</p>
+      </div>
+      <div class="note-card">
+        <p class="note-card__no">02</p>
+        <h3 class="note-card__title">貸切・宴会</h3>
+        <p class="note-card__desc">7名様以上は店舗貸切も承ります。日程・ご予算はお電話でご相談ください。</p>
+      </div>
+      <div class="note-card">
+        <p class="note-card__no">03</p>
+        <h3 class="note-card__title">お席のご案内</h3>
+        <p class="note-card__desc">個室は1室（4〜6名）のみ。混雑時はお時間を区切らせていただく場合がございます。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-col footer-col--about">
+      <p class="footer-logo">燈</p>
+      <p class="footer-address">運営：炭火焼鳥 燈（個人経営）<br>〒000-0000 〇〇県〇〇市〇〇町1-2-3</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col__label">SITE MAP</p>
+      <nav class="footer-col__links" aria-label="サイトマップ">
+        <a href="index.html">HOME</a>
+        <a href="こだわり.html">こだわり</a>
+        <a href="メニュー.html">メニュー</a>
+        <a href="店舗情報.html">店舗情報</a>
+        <a href="お知らせ.html">お知らせ</a>
+        <a href="ご予約.html">ご予約</a>
+      </nav>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col__label">CONNECT WITH US</p>
+      <nav class="footer-col__links" aria-label="外部リンク">
+        <a href="https://instagram.com/akari_yakitori">Instagram</a>
+        <a href="tel:00-0000-0000">00-0000-0000</a>
+        <a href="/privacy-policy">プライバシーポリシー</a>
+      </nav>
+    </div>
+  </div>
+  <p class="site-footer__copyright">©炭火焼鳥 燈</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/reservation.js"></script>
+</body>
+</html>

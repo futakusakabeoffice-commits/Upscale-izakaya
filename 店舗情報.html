@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>店舗情報 - 炭火焼鳥 燈（あかり）</title>
+<meta name="description" content="炭火焼鳥 燈の店舗情報。住所、営業時間、お席のご案内、アクセス、営業日カレンダーをご確認いただけます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">燈</span>
+      <span class="brand__name brand__name--latin">SUMIBI YAKITORI AKARI</span>
+    </a>
+
+    <button type="button" class="hamburger" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">HOME</a>
+      <a href="こだわり.html">こだわり</a>
+      <a href="メニュー.html">メニュー</a>
+      <a href="店舗情報.html" class="is-active" aria-current="page">店舗情報</a>
+      <a href="お知らせ.html">お知らせ</a>
+      <a href="ご予約.html" class="btn btn--pill">ご予約</a>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" hidden>
+  <nav aria-label="モバイルナビゲーション">
+    <a href="index.html">HOME</a>
+    <a href="こだわり.html">こだわり</a>
+    <a href="メニュー.html">メニュー</a>
+    <a href="店舗情報.html" class="is-active" aria-current="page">店舗情報</a>
+    <a href="お知らせ.html">お知らせ</a>
+    <a href="ご予約.html" class="btn btn--pill">ご予約</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="page-hero">
+    <img class="page-hero__image" src="images/shop-hero.jpg" alt="店舗外観・暖簾と提灯">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__title">Shop Info</p>
+      <p class="page-hero__subtitle">店舗情報</p>
+    </div>
+  </section>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="index.html">ホーム</a> ── <span class="breadcrumb__current">店舗情報</span>
+  </nav>
+
+  <section class="shop" id="calendar">
+    <div class="shop__inner">
+      <div class="shop__content">
+        <p class="label label--accent">INFORMATION</p>
+        <h2 class="heading-jp heading-jp--light">炭火焼鳥 燈</h2>
+        <dl class="shop__list">
+          <dt>住所</dt>
+          <dd>〒000-0000 〇〇県〇〇市〇〇町1-2-3</dd>
+          <dt>電話番号</dt>
+          <dd>00-0000-0000</dd>
+          <dt>営業時間</dt>
+          <dd>17:00〜24:00（L.O. フード23:00 / ドリンク23:30）</dd>
+          <dt>定休日</dt>
+          <dd>日曜日</dd>
+          <dt>席数</dt>
+          <dd>カウンター8席、テーブル3卓（12席）、個室1室（4〜6名）</dd>
+          <dt>駐車場</dt>
+          <dd>なし（近隣コインパーキングをご利用ください）</dd>
+          <dt class="shop__list-last">アクセス</dt>
+          <dd class="shop__list-last">〇〇駅から徒歩3分</dd>
+        </dl>
+      </div>
+      <div class="shop__image"><img src="images/shop-counter.jpg" alt="店内カウンター（縦位置）"></div>
+    </div>
+  </section>
+
+  <section class="seats">
+    <div class="section-heading">
+      <p class="label label--primary">SEATS</p>
+      <h2 class="heading-jp">席のご案内</h2>
+    </div>
+    <div class="seats-grid">
+      <div>
+        <div class="seat-card__image"><img src="images/seat-counter.jpg" alt="カウンター席"></div>
+        <div class="seat-card__meta">
+          <span class="seat-card__no">01</span>
+          <h3 class="seat-card__title">カウンター 8席</h3>
+        </div>
+        <p class="seat-card__desc">焼き場の正面。炭火の音と香りを間近に、おひとりでも心地よく。</p>
+      </div>
+      <div>
+        <div class="seat-card__image"><img src="images/seat-table.jpg" alt="テーブル席"></div>
+        <div class="seat-card__meta">
+          <span class="seat-card__no">02</span>
+          <h3 class="seat-card__title">テーブル 3卓／12席</h3>
+        </div>
+        <p class="seat-card__desc">少人数の会食に。卓を寄せての貸切もご相談いただけます。</p>
+      </div>
+      <div>
+        <div class="seat-card__image"><img src="images/seat-private.jpg" alt="個室"></div>
+        <div class="seat-card__meta">
+          <span class="seat-card__no">03</span>
+          <h3 class="seat-card__title">個室 1室（4〜6名）</h3>
+        </div>
+        <p class="seat-card__desc">大切な方との席に。ご予約はお早めにお願いいたします。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="access">
+    <div class="section-heading">
+      <p class="label label--accent">ACCESS</p>
+      <h2 class="heading-jp heading-jp--light">アクセス</h2>
+    </div>
+    <div class="access__inner">
+      <div class="access__map"><img src="images/map.jpg" alt="地図（Googleマップ埋め込み想定）"></div>
+      <div class="access__details">
+        <div>
+          <p class="access__details-label">所在地</p>
+          <p>〒000-0000<br>〇〇県〇〇市〇〇町1-2-3</p>
+        </div>
+        <div>
+          <p class="access__details-label">最寄り</p>
+          <p>〇〇駅から徒歩3分</p>
+        </div>
+        <div>
+          <p class="access__details-label">駐車場</p>
+          <p>なし（近隣コインパーキングをご利用ください）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teaser">
+    <div class="teaser__inner">
+      <div>
+        <p class="teaser__label">営業日のご案内</p>
+        <p class="teaser__title">Calendar</p>
+        <p class="teaser__lead teaser__lead--tight">定休日は日曜日。臨時休業や貸切営業の予定は、カレンダーにてご確認いただけます。</p>
+      </div>
+      <div class="calendar-widget">
+        <div class="calendar-widget__head">
+          <span class="calendar-widget__month">September 2026</span>
+          <span class="calendar-widget__legend">斜線＝定休日</span>
+        </div>
+        <div class="calendar-widget__grid">
+          <span class="wd">S</span><span class="wd">M</span><span class="wd">T</span><span class="wd">W</span><span class="wd">T</span><span class="wd">F</span><span class="wd">S</span>
+          <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          <span class="closed">6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+          <span class="closed">13</span><span class="today">14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+          <span class="closed">20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+          <span class="closed">27</span><span>28</span><span>29</span><span>30</span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="label label--accent">CONTACT</p>
+    <h2 class="heading-jp heading-jp--light">ご予約・お問い合わせ</h2>
+    <p class="contact__lead">カウンター席・個室のご予約、貸切・宴会のご相談はお電話にて承ります。</p>
+    <a href="tel:00-0000-0000" class="btn btn--pill btn--contact">
+      お電話でのご予約はこちら<span>00-0000-0000</span>
+    </a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-col footer-col--about">
+      <p class="footer-logo">燈</p>
+      <p class="footer-address">運営：炭火焼鳥 燈（個人経営）<br>〒000-0000 〇〇県〇〇市〇〇町1-2-3</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col__label">SITE MAP</p>
+      <nav class="footer-col__links" aria-label="サイトマップ">
+        <a href="index.html">HOME</a>
+        <a href="こだわり.html">こだわり</a>
+        <a href="メニュー.html">メニュー</a>
+        <a href="店舗情報.html">店舗情報</a>
+        <a href="お知らせ.html">お知らせ</a>
+        <a href="ご予約.html">ご予約</a>
+      </nav>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col__label">CONNECT WITH US</p>
+      <nav class="footer-col__links" aria-label="外部リンク">
+        <a href="https://instagram.com/akari_yakitori">Instagram</a>
+        <a href="tel:00-0000-0000">00-0000-0000</a>
+        <a href="/privacy-policy">プライバシーポリシー</a>
+      </nav>
+    </div>
+  </div>
+  <p class="site-footer__copyright">©炭火焼鳥 燈</p>
+</footer>
+
+<div class="reserve-bar">
+  <span class="reserve-bar__label">ご予約・お問い合わせ</span>
+  <div class="reserve-bar__right">
+    <span class="reserve-bar__calendar">営業日カレンダー</span>
+    <span class="reserve-bar__tel">TEL 00-0000-0000</span>
+    <a href="ご予約.html" class="btn btn--pill btn--reserve">空席確認・ご予約 ↗</a>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

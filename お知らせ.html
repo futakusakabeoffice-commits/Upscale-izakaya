@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お知らせ - 炭火焼鳥 燈（あかり）</title>
+<meta name="description" content="炭火焼鳥 燈からのお知らせ。営業日・臨時休業のご案内、メニューやメディア掲載情報を随時更新しています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">燈</span>
+      <span class="brand__name brand__name--latin">SUMIBI YAKITORI AKARI</span>
+    </a>
+
+    <button type="button" class="hamburger" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">HOME</a>
+      <a href="こだわり.html">こだわり</a>
+      <a href="メニュー.html">メニュー</a>
+      <a href="店舗情報.html">店舗情報</a>
+      <a href="お知らせ.html" class="is-active" aria-current="page">お知らせ</a>
+      <a href="ご予約.html" class="btn btn--pill">ご予約</a>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" hidden>
+  <nav aria-label="モバイルナビゲーション">
+    <a href="index.html">HOME</a>
+    <a href="こだわり.html">こだわり</a>
+    <a href="メニュー.html">メニュー</a>
+    <a href="店舗情報.html">店舗情報</a>
+    <a href="お知らせ.html" class="is-active" aria-current="page">お知らせ</a>
+    <a href="ご予約.html" class="btn btn--pill">ご予約</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="news-banner">
+    <div class="news-banner__title">
+      <span class="news-banner__latin">News</span>
+      <span class="news-banner__jp">お知らせ</span>
+    </div>
+    <div class="news-banner__aside">
+      <p>営業日・臨時休業の予定は<br>カレンダーからご確認いただけます。</p>
+      <a href="店舗情報.html#calendar" class="news-banner__calendar">
+        <span class="news-banner__calendar-label">Calendar</span>
+        <span class="news-banner__calendar-circle">→</span>
+      </a>
+    </div>
+  </section>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="index.html">ホーム</a> ── <span class="breadcrumb__current">お知らせ</span>
+  </nav>
+
+  <section class="news-layout">
+    <div class="news-layout__inner">
+      <div class="category-list" id="categoryList" role="group" aria-label="カテゴリで絞り込み"></div>
+
+      <div class="post-list">
+        <div id="postList"></div>
+
+        <div class="pagination">
+          <span class="is-current">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span class="next">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="label label--accent">CONTACT</p>
+    <h2 class="heading-jp heading-jp--light">ご予約・お問い合わせ</h2>
+    <p class="contact__lead">カウンター席・個室のご予約、貸切・宴会のご相談はお電話にて承ります。</p>
+    <a href="tel:00-0000-0000" class="btn btn--pill btn--contact">
+      お電話でのご予約はこちら<span>00-0000-0000</span>
+    </a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-col footer-col--about">
+      <p class="footer-logo">燈</p>
+      <p class="footer-address">運営：炭火焼鳥 燈（個人経営）<br>〒000-0000 〇〇県〇〇市〇〇町1-2-3</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col__label">SITE MAP</p>
+      <nav class="footer-col__links" aria-label="サイトマップ">
+        <a href="index.html">HOME</a>
+        <a href="こだわり.html">こだわり</a>
+        <a href="メニュー.html">メニュー</a>
+        <a href="店舗情報.html">店舗情報</a>
+        <a href="お知らせ.html">お知らせ</a>
+        <a href="ご予約.html">ご予約</a>
+      </nav>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col__label">CONNECT WITH US</p>
+      <nav class="footer-col__links" aria-label="外部リンク">
+        <a href="https://instagram.com/akari_yakitori">Instagram</a>
+        <a href="tel:00-0000-0000">00-0000-0000</a>
+        <a href="/privacy-policy">プライバシーポリシー</a>
+      </nav>
+    </div>
+  </div>
+  <p class="site-footer__copyright">©炭火焼鳥 燈</p>
+</footer>
+
+<div class="reserve-bar">
+  <span class="reserve-bar__label">ご予約・お問い合わせ</span>
+  <div class="reserve-bar__right">
+    <span class="reserve-bar__calendar">営業日カレンダー</span>
+    <span class="reserve-bar__tel">TEL 00-0000-0000</span>
+    <a href="ご予約.html" class="btn btn--pill btn--reserve">空席確認・ご予約 ↗</a>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/news.js"></script>
+</body>
+</html>
