@@ -767,7 +767,7 @@ a { color: inherit; text-decoration: none; }
   gap: var(--space-3);
   border-bottom: 1px solid var(--border);
 }
-.news-banner__title { display: flex; align-items: baseline; gap: 20px; }
+.news-banner__title { display: flex; align-items: baseline; gap: 20px; margin: 0; }
 .news-banner__latin { font: 300 clamp(48px, 12vw, 88px)/1 var(--font-latin); color: var(--text-main); letter-spacing: .02em; }
 .news-banner__jp { font: 400 14px var(--font-body); color: var(--primary); letter-spacing: .3em; }
 .news-banner__aside p { margin: 0 0 14px; font: 300 14px/1.9 var(--font-body); color: var(--text-main); }

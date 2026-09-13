@@ -3,13 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>if ("scrollRestoration" in history) { history.scrollRestoration = "manual"; }</script>
-<title>お知らせ - 炭火焼鳥 燈（あかり）</title>
-<meta name="description" content="炭火焼鳥 燈からのお知らせ。営業日・臨時休業のご案内、メニューやメディア掲載情報を随時更新しています。">
+<script src="js/scroll-restoration.js"></script>
+<title>お知らせ・営業日カレンダー | 炭火焼鳥 燈（あかり）</title>
+<meta name="description" content="炭火焼鳥「燈」からの最新のお知らせをまとめてご覧いただけます。営業日・臨時休業のご案内、季節のメニュー情報、メディア掲載情報などを随時更新しておりますので、ぜひブックマークしてご確認ください。営業日カレンダーもあわせてご確認いただけます。ご来店・ご予約に関するお問い合わせは、お電話または専用フォームより承っております。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sumibi-akari.example.com/お知らせ.html">
+<meta property="og:site_name" content="炭火焼鳥 燈（あかり）">
+<meta property="og:title" content="お知らせ・営業日カレンダー | 炭火焼鳥 燈（あかり）">
+<meta property="og:description" content="炭火焼鳥「燈」からの最新のお知らせをまとめてご覧いただけます。営業日・臨時休業のご案内、季節のメニュー情報、メディア掲載情報などを随時更新しておりますので、ぜひブックマークしてご確認ください。営業日カレンダーもあわせてご確認いただけます。ご来店・ご予約に関するお問い合わせは、お電話または専用フォームより承っております。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sumibi-akari.example.com/お知らせ.html">
+<meta property="og:image" content="https://sumibi-akari.example.com/images/ogp-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "炭火焼鳥 燈（あかり）",
+  "image": "https://sumibi-akari.example.com/images/hero-yakitori.jpg",
+  "url": "https://sumibi-akari.example.com/",
+  "telephone": "+81-00-0000-0000",
+  "priceRange": "¥¥",
+  "servesCuisine": "焼鳥",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "〇〇町1-2-3",
+    "addressLocality": "〇〇市",
+    "addressRegion": "〇〇県",
+    "postalCode": "000-0000",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "17:00",
+    "closes": "24:00"
+  },
+  "sameAs": [
+    "https://instagram.com/akari_yakitori"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://sumibi-akari.example.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "お知らせ",
+      "item": "https://sumibi-akari.example.com/お知らせ.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -49,10 +114,10 @@
 <main>
 
   <section class="news-banner">
-    <div class="news-banner__title">
+    <h1 class="news-banner__title">
       <span class="news-banner__latin">News</span>
       <span class="news-banner__jp">お知らせ</span>
-    </div>
+    </h1>
     <div class="news-banner__aside">
       <p>営業日・臨時休業の予定は<br>カレンダーからご確認いただけます。</p>
       <a href="店舗情報.html#calendar" class="news-banner__calendar">
