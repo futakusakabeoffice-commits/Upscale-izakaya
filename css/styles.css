@@ -923,6 +923,23 @@ a { color: inherit; text-decoration: none; }
 .notes { background: var(--bg); padding: var(--space-4) 24px calc(var(--space-4) + 8px); }
 .notes-grid { display: grid; gap: 24px; max-width: 1136px; margin: 0 auto; }
 
+/* ---------- 404 error page ---------- */
+
+.error-page {
+  background: var(--bg);
+  color: var(--text-light);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-5) 24px;
+}
+.error-page__code { margin: 0 0 24px; font: 300 clamp(72px, 18vw, 160px)/1 var(--font-latin); color: var(--accent); letter-spacing: .04em; }
+.error-page__title { margin: 0 0 20px; font: 400 clamp(20px, 4vw, 28px)/1.6 var(--font-heading); letter-spacing: .1em; }
+.error-page__text { margin: 0 0 40px; font: 300 15px/2 var(--font-body); opacity: .85; max-width: 32em; }
+
 /* ---------- Policy page (legal / utility text pages) ---------- */
 
 .policy { background: var(--bg); color: var(--text-light); padding: var(--space-4) 24px; }
