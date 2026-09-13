@@ -93,6 +93,10 @@
     if (!validate()) return;
     form.hidden = true;
     thanksPanel.hidden = false;
+    // GA4 conversion event. No-op until gtag.js is installed with a real measurement ID.
+    if (typeof gtag === "function") {
+      gtag("event", "reservation_submit", { party_size: state.party, seat_type: state.seat });
+    }
   });
 
   resetFormBtn.addEventListener("click", () => {

@@ -34,3 +34,10 @@
     if (window.innerWidth >= 1024 && !nav.hidden) closeMenu();
   });
 })();
+
+// GA4 conversion event: phone tap. No-op until gtag.js is installed with a real measurement ID.
+document.addEventListener("click", (e) => {
+  const link = e.target.closest('a[href^="tel:"]');
+  if (!link || typeof gtag !== "function") return;
+  gtag("event", "phone_click", { phone_number: link.getAttribute("href").slice(4) });
+});
