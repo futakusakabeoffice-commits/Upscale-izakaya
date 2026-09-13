@@ -418,6 +418,7 @@ a { color: inherit; text-decoration: none; }
 .footer-address { margin: 0; font: 300 14px/2 var(--font-body); color: var(--text-light); opacity: .85; }
 .footer-col__label { margin: 0 0 18px; font: 400 12px var(--font-latin); color: var(--text-light); letter-spacing: .3em; }
 .footer-col__links { display: flex; flex-direction: column; gap: 12px; font: 300 14px var(--font-body); color: var(--text-light); }
+.footer-col__links [aria-current="page"] { color: var(--text-muted); }
 
 .site-footer__copyright {
   max-width: 1136px;
