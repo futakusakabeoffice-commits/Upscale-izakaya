@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sumibi-akari.example.com/sitemap.xml
+Sitemap: https://sensational-taffy-22054f.netlify.app/sitemap.xml
